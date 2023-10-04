@@ -74,8 +74,7 @@ Most of the micropython codes were precompiled before installation using [mpy-cr
 The assembled units of SoC/display and air speed sensor are shown in the photos (see below).
 The procedure to calculate air speed is shown in elesewhere. [A link to Wikipedia](https://en.wikipedia.org/wiki/Pitot_tube)
 
-![PHOTO_DISPLAY_UNIT](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/597a1803-d24d-48b3-8af5-0211344b13ab "Display_Unit")![PHOTO_SENSOR_UNIT](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/bd19487f-eebe-436c-b4d1-b03a5846598e "Sensor_Unit")
-![Fig2a](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/8a9c0e06-09cd-4d3d-8f98-5ab75494a01e "Sensor_Unit")
+![PHOTO_DISPLAY_UNIT](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/597a1803-d24d-48b3-8af5-0211344b13ab "Display_Unit")![PHOTO_SENSOR_UNIT](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/bd19487f-eebe-436c-b4d1-b03a5846598e "Sensor_Unit")![Fig2a](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/8a9c0e06-09cd-4d3d-8f98-5ab75494a01e "Sensor_Unit")
 
 In the following experiments, the air speed sensor unit (GP mount, consisting of the Pitot 
 tube and the differential pressure sensor) was mounted in front of a bicycle.
