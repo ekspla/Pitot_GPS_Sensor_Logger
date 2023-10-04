@@ -6,22 +6,22 @@
 
 
 An air/ground speed measurement system with logging functionality was easily built 
-with a Pitot tube[1](https://en.wikipedia.org/wiki/Pitot_tube) and a GPS receiver using micropython[2](https://micropython.org/).  The system allows us 
+with a Pitot tube [1](https://en.wikipedia.org/wiki/Pitot_tube) and a GPS receiver using micropython [2](https://micropython.org/).  The system allows us 
 to measure the air and the ground speeds almost simultaneously at 5 Hz or more for various 
 outdoor activities.  As a demonstration of this system, a correlation map of the air 
-and the ground speeds of drfating in cycling[3](https://en.wikipedia.org/wiki/Drafting_(aerodynamics)) is shown.
+and the ground speeds of drfating in cycling [3](https://en.wikipedia.org/wiki/Drafting_(aerodynamics)) is shown.
 
 
 ## Materials
 
 
 - Soc:
-BlackPill (STM32F411CEU, 8 MB SPI flash), WeACT Studio[4](https://github.com/WeActStudio)
+BlackPill (STM32F411CEU, 8 MB SPI flash), WeACT Studio [4](https://github.com/WeActStudio)
 
 RTC clock (LSE) adjusted to 32.768 kHz using a pair of additional ~5 pF C0G capacitors, 
 pin headers of PC14/15 removed, a coin-cell (CR2032) attatched to VBAT.
 
-Micropython 1.20.0[2](https://micropython.org/)
+Micropython 1.20.0 [2](https://micropython.org/)
 
 
 - Pitot tube:
@@ -31,7 +31,7 @@ A home built GoPro (GP) mount for the tube and the differential pressure sensor 
 
 
 - Differential pressure sensor:
-D6F-PH5050[5](https://github.com/omron-devhub), OMRON, +/- 500 Pa, I2C.
+D6F-PH5050 [5](https://github.com/omron-devhub), OMRON, +/- 500 Pa, I2C.
 
 [`d6f_ph.py`](https://github.com/ekspla/D6F-PH)
 
@@ -43,25 +43,25 @@ Ublox M8N, UART
 
   Update rates were set at 0.5, 5, and 5 Hz for GNRMC, GNVTG and GNGGA sentences, respectively.
   
-`micropyGPS.py`[6](https://github.com/ekspla/micropyGPS), a forked/modified version of [inmcm/micropyGPS](https://github.com/inmcm/micropyGPS)
+`micropyGPS.py` [6](https://github.com/ekspla/micropyGPS), a forked/modified version of [inmcm/micropyGPS](https://github.com/inmcm/micropyGPS)
 
 
 - A display to show the air/ground speed in real time (optional):
 A cheap HD44780 (16x2 character) type LCD, I2C
 
-`lcd_api.py`, dhyLands[7](https://github.com/dhylands/python_lcd)
+`lcd_api.py`, dhyLands [7](https://github.com/dhylands/python_lcd)
 
 
 - SD Card (optional, SPI):
 Used for logging data, FAT format
 
-`sdcard.py`, micropython-lib[8](https://github.com/micropython/micropython-lib)
+`sdcard.py`, micropython-lib [8](https://github.com/micropython/micropython-lib)
 
 
 - Environmental sensor, BMP280, (optional, I2C):
 Used for calibration, as well as for calculating altitudes.
 
-A modified version of Adafruit[9](https://github.com/adafruit) driver.
+A modified version of Adafruit [9](https://github.com/adafruit) driver.
 
 Continuous mode, Px16, Tx2, w/o FIR filter.
 
@@ -70,7 +70,7 @@ Continuous mode, Px16, Tx2, w/o FIR filter.
 
 Most of the micropython codes were precompiled before installing using [mpy-cross](https://github.com/micropython/micropython/tree/master/mpy-cross).
 The assembled units of display and air speed sensor are shown in the photos (see below).
-The procedure to calculate air speed is shown in elesewhere.[A link to Wikipedia](https://en.wikipedia.org/wiki/Pitot_tube)
+The procedure to calculate air speed is shown in elesewhere. [A link to Wikipedia](https://en.wikipedia.org/wiki/Pitot_tube)
 
 ![PHOTO_DISPLAY_UNIT](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/597a1803-d24d-48b3-8af5-0211344b13ab "Display_Unit")![PHOTO_SENSOR_UNIT](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/bd19487f-eebe-436c-b4d1-b03a5846598e "Sensor_Unit")
 
@@ -93,7 +93,7 @@ may be caused by headwinds of oncoming cars.
 A pair of bicycles were used for this experiment in a day of almost no wind outdoor.  
 The mesurement system was attached in front of the trailer's bicycle following after the 
 leader's bicycle in line.  The distances between them were kept 1.0-1.5 m at speeds 
-below 40 km/h, while a bit longer distances at above the speeds for safety reasons.  
+below 40 km/h, while a bit longer distances at above these speeds for safety reasons.  
 The effect of drafting is easily seen in the figure; the measurement points in the correlation 
 map start to deviate from the diagonal line by increasing the ground speed at above 10 km/h.
 
@@ -106,7 +106,7 @@ i.e. experiments with and without the leader's bicycle.
 
 ## Concluding Remarks
 
-An affordable priced system to similtanously measure the air and ground speeds outdoor was 
+An affordable priced (for the hobbiest) system to similtanously measure the air and ground speeds outdoor was 
 easily built.  As a demostrative example, a mesurement of drafting effect in cycling outdoor 
 is shown.
 
@@ -118,5 +118,5 @@ multiple (possibly three, each at an angle of 120 deg.) air speed sensors and ve
 
 [Pitot Tube](https://en.wikipedia.org/wiki/Pitot_tube)
 
-[Drafting](https://en.wikipedia.org/wiki/Drafting_(aerodynamics))
+[Drafting (Aerodynamics)](https://en.wikipedia.org/wiki/Drafting_(aerodynamics))
 
