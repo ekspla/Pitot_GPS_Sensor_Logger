@@ -37,7 +37,7 @@ D6F-PH5050 [5](https://github.com/omron-devhub), OMRON, +/- 500 Pa, I2C.
 
 [`d6f_ph.py`](https://github.com/ekspla/D6F-PH)
 
-Similar sensors such as MS5525 (TE Connectivity) and SDP810 (Sensirion) may be used.
+Similar sensors such as MS5525 (TE Connectivity) and SDP810 (Sensirion) may be used with their drivers.
 
 
 - GPS receiver:
@@ -76,8 +76,8 @@ The procedure to calculate air speed is shown in elesewhere. [A link to Wikipedi
 
 ![PHOTO_DISPLAY_UNIT](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/597a1803-d24d-48b3-8af5-0211344b13ab "Display_Unit")![PHOTO_SENSOR_UNIT](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/bd19487f-eebe-436c-b4d1-b03a5846598e "Sensor_Unit")
 
-In the following experiments, the air speed sensor unit (GP mount, consisting of Pitot 
-tube and differential pressure sensor) was mounted in front of a bicycle.
+In the following experiments, the air speed sensor unit (GP mount, consisting of the Pitot 
+tube and the differential pressure sensor) was mounted in front of a bicycle.
 
 
 ## Calibration
