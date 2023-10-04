@@ -53,13 +53,14 @@ A cheap HD44780 (16x2 character) type LCD, I2C
 
 
 - SD Card (optional, SPI):
-Used for logging data, FAT format
+Used for logging data, FAT format.
 
 `sdcard.py`, micropython-lib [8](https://github.com/micropython/micropython-lib)
 
 
 - Environmental sensor, BMP280, (optional, I2C):
 Used for calibration, as well as for calculating altitudes.
+Note that this sensor should be protected against direct sunlight and air.  A tiny piece of black open-cell foam (sponge) may suffice.
 
 A modified version of Adafruit [9](https://github.com/adafruit) driver.
 
