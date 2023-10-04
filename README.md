@@ -65,9 +65,7 @@ Used for calibration, as well as for calculating altitudes.
 
 Note that this sensor should be protected against direct sunlight and air stream.  A tiny piece of black open-cell foam (sponge) may suffice.
 
-A modified version of Adafruit [9](https://github.com/adafruit) driver.
-
-Continuous mode, Px16, Tx2, w/o FIR filter.
+A modified version of Adafruit [9](https://github.com/adafruit) driver.  Continuous mode, Px16, Tx2, w/o FIR filter.
 
 
 ## Assembling
