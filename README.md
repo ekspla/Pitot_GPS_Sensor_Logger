@@ -60,6 +60,7 @@ Used for logging data, FAT format.
 
 - Environmental sensor, BMP280, (optional, I2C):
 Used for calibration, as well as for calculating altitudes.
+
 Note that this sensor should be protected against direct sunlight and air.  A tiny piece of black open-cell foam (sponge) may suffice.
 
 A modified version of Adafruit [9](https://github.com/adafruit) driver.
