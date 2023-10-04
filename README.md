@@ -50,7 +50,7 @@ Used for logging data, FAT format
 
 - Environmental sensor, BMP280, (optional, I2C):
 Used for calibration, as well as for calculating altitudes
-A modified version of Adafruit[8](https://github.com/adafruit) driver
+A modified version of Adafruit[9](https://github.com/adafruit) driver
 Continuous mode, Px16, Tx2, w/o FIR
 
 
