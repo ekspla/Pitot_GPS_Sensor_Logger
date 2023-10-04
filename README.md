@@ -85,7 +85,7 @@ below 40 km/h, while a bit longer distances at above the speeds for safety reaso
 The effect of drafting is easily seen in the figure; the measurement points in the correlation 
 map start to deviate from the diagonal line by increasing the ground speed at above 10 km/h.
 
-![FIG2](http:// "Fig2_Drafting_in_Cycling")
+![FIG2](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/567399aa-fdd2-4cee-abe9-0b21babf997b "Fig2_Drafting_in_Cycling")
 
 It should be noted that **this data was easily taken by a single experiment** of 16 min, while 
 most of the drafting experiments done in the past needed at least two independent experiments,
