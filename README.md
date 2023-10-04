@@ -16,41 +16,52 @@ and ground speeds of drfating in cycling[3](https://en.wikipedia.org/wiki/Drafti
 
 - Soc:
 BlackPill (STM32F411CEU, 8 MB SPI flash), WeACT Studio[4](https://github.com/WeActStudio)
+
 RTC clock (LSE) adjusted to 32.768 kHz using a pair of additional ~5 pF C0G capacitors, 
 pin headers of PC14/15 removed, a coin-cell (CR2032) attatched to VBAT
+
 Micropython 1.20.0[2](https://micropython.org/)
 
 
 - Pitot tube:
 A cheap pitot tube for UAVs (drones), Aliexpress
+
 A home built GoPro mount for the tube and the differential pressure sensor (see below)
 
 
 - Differential pressure sensor:
 D6F-PH5050[5](https://github.com/omron-devhub), OMRON, +/- 500 Pa, I2C
+
 [`d6f_ph.py`](https://github.com/ekspla/D6F-PH)
+
 Similar sensors such as MS5525 and SDP810 may be used.
 
 
 - GPS:
 Ublox M8N, UART
+
   Update rates are 0.5, 5, and 5 Hz for GNRMC, GNVTG and GNGGA sentences, respectively.
+  
 `micropyGPS.py`[6](https://github.com/ekspla/micropyGPS), a forked/modified version of [inmcm/micropyGPS](https://github.com/inmcm/micropyGPS)
 
 
 - A Display to show air/ground speed (optional):
 A cheap HD44780 (16x2 character) type LCD, I2C
+
 `lcd_api.py`, dhyLands[7](https://github.com/dhylands/python_lcd)
 
 
 - SD Card (optional, SPI):
 Used for logging data, FAT format
+
 `sdcard.py`, micropython-lib[8](https://github.com/micropython/micropython-lib)
 
 
 - Environmental sensor, BMP280, (optional, I2C):
 Used for calibration, as well as for calculating altitudes
+
 A modified version of Adafruit[9](https://github.com/adafruit) driver
+
 Continuous mode, Px16, Tx2, w/o FIR
 
 
