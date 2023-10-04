@@ -37,7 +37,7 @@ D6F-PH5050, OMRON [7](https://github.com/omron-devhub), +/- 500 Pa, I2C.
 
 `d6f_ph.py` [8](https://github.com/ekspla/D6F-PH)
 
-Similar sensors such as MS5525 (TE Connectivity) and SDP810 (Sensirion) may be used with their drivers.
+Similar sensors such as MS5525 (TE Connectivity) and SDP810 (Sensirion) may be used with their appropriate drivers.
 
 
 - GPS receiver:
@@ -63,9 +63,9 @@ Used for logging data, FAT format.
 - Environmental sensor, BMP280 from BOSH Sensortec [13](https://www.bosch-sensortec.com/products/environmental-sensors/pressure-sensors/bmp280/), (optional, I2C):
 Used for air density calibration, as well as for calculating altitudes.
 
-Note that this sensor should be protected against direct sunlight and air stream.  A tiny piece of black open-cell foam (sponge) may suffice.
-
 A modified version of Adafruit [14](https://github.com/adafruit) driver; continuous mode, Px16, Tx2, and w/o FIR filter.
+
+Note that this sensor should be protected against direct sunlight and air stream.  A tiny piece of black open-cell foam (sponge) may suffice.
 
 
 ## Assembling
@@ -76,16 +76,17 @@ The procedure to calculate air speed is shown in elesewhere. [1, a link to Wikip
 
 ![PHOTO_DISPLAY_UNIT](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/597a1803-d24d-48b3-8af5-0211344b13ab "Display_Unit")![PHOTO_SENSOR_AND_PITOT](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/bd19487f-eebe-436c-b4d1-b03a5846598e "Sensor_Unit")![PHOTO_SENSOR_UNIT](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/8a9c0e06-09cd-4d3d-8f98-5ab75494a01e "Sensor_Unit")
 
-In the following experiments, the air speed sensor unit (GP mount, consisting of the Pitot 
-tube and the differential pressure sensor) was mounted in front of a bicycle.  Update and 
-logging rates were set at 5 Hz (200 ms interval), though the system can handle > 10 Hz.
+In the following experiments, the air speed sensor unit shown in the 3rd photo (GP mount, 
+consisting of the Pitot tube and the differential pressure sensor) was mounted in front of 
+a bicycle.  Update and logging rates were set at 5 Hz (200 ms interval), though the system 
+can handle > 10 Hz.
 
 
 ## Calibration
 
 Air speed was calibrated by using Pitot coefficient and an offset of differential pressure.
 Its accuracy was tested in a foggy morning around dawn (no wind / no sunlight).
-See a correlation map below.  The tiny deviation from the diagonal line in 10-20 km/h range 
+See the correlation map below.  The tiny deviation from the diagonal line in 10-20 km/h range 
 may be caused by headwinds of oncoming cars.
 
 ![FIG1](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/f7df4ba7-1bcd-483e-b431-faf6cff3856e "Fig1_Test_Calibration")
@@ -104,7 +105,7 @@ map start to deviate from the diagonal line by increasing the ground speed at ab
 
 It should be noted that **this data was easily taken by a single experiment** of 16 min, while 
 most of the drafting experiments done in the past needed at least two independent experiments,
-i.e. experiments with and without the leader's bicycle.
+i.e. experiments with and without the leader's bicycle. [Ref.](https:// "TO_BE_INCLUDED")
 
 
 ## Concluding Remarks
