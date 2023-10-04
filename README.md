@@ -29,48 +29,48 @@ Micropython 1.20.0 [2](https://micropython.org/) installed via ST-LINK [6](https
 - Pitot tube:
 A cheap pitot tube for UAVs (drones), Aliexpress.
 
-A home built GoPro (GP) compatible mount for the tube and the differential pressure sensor (see below).
+A home built GoPro (GP) [7](https://gopro.com/) compatible mount for the tube and the differential pressure sensor (see below).
 
 
 - Differential pressure sensor:
-D6F-PH5050, OMRON [7](https://github.com/omron-devhub), +/- 500 Pa, I2C.
+D6F-PH5050, OMRON [8](https://github.com/omron-devhub), +/- 500 Pa, I2C.
 
-`d6f_ph.py` [8](https://github.com/ekspla/D6F-PH)
+`d6f_ph.py` [9](https://github.com/ekspla/D6F-PH)
 
 Similar sensors such as MS5525 (TE Connectivity) and SDP810 (Sensirion) may be used with their appropriate drivers.
 
 
 - GPS receiver:
-u-blox NEO-M8N [9](https://www.u-blox.com/en/product/neo-m8-series), UART
+u-blox NEO-M8N [10](https://www.u-blox.com/en/product/neo-m8-series), UART
 
   Update rates were set at 0.5, 5, and 5 Hz for GNRMC, GNVTG and GNGGA sentences, respectively.
   
-`micropyGPS.py` [10](https://github.com/ekspla/micropyGPS), a forked/modified version of [inmcm/micropyGPS](https://github.com/inmcm/micropyGPS)
+`micropyGPS.py` [11](https://github.com/ekspla/micropyGPS), a forked/modified version of [inmcm/micropyGPS](https://github.com/inmcm/micropyGPS)
 
 
 - A display to show the air/ground speed in real time (optional):
 A cheap HD44780 (16x2 character) type LCD, I2C
 
-`lcd_api.py`, dhylands [11](https://github.com/dhylands/python_lcd)
+`lcd_api.py`, dhylands [12](https://github.com/dhylands/python_lcd)
 
 
 - SD Card (optional, SPI):
 Used for logging data, FAT format.
 
-`sdcard.py`, micropython-lib [12](https://github.com/micropython/micropython-lib)
+`sdcard.py`, micropython-lib [13](https://github.com/micropython/micropython-lib)
 
 
-- Environmental sensor, BMP280 from BOSH Sensortec [13](https://www.bosch-sensortec.com/products/environmental-sensors/pressure-sensors/bmp280/), (optional, I2C):
+- Environmental sensor, BMP280 from BOSH Sensortec [14](https://www.bosch-sensortec.com/products/environmental-sensors/pressure-sensors/bmp280/), (optional, I2C):
 Used for air density calibration, as well as for calculating altitudes.
 
-A modified version of Adafruit [14](https://github.com/adafruit) driver; continuous mode, Px16, Tx2, and w/o FIR filter.
+A modified version of Adafruit [15](https://github.com/adafruit) driver; continuous mode, Px16, Tx2, and w/o FIR filter.
 
 Note that this sensor should be protected against direct sunlight and air stream.  A tiny piece of black open-cell foam (sponge) may suffice.
 
 
 ## Assembling
 
-Most of the micropython codes were precompiled before installation using mpy-cross [15](https://github.com/micropython/micropython/tree/master/mpy-cross).
+Most of the micropython codes were precompiled before installation using mpy-cross [16](https://github.com/micropython/micropython/tree/master/mpy-cross).
 The assembled units of SoC/display and air speed sensor are shown in the photos (see below).
 The procedure to calculate air speed is shown in elesewhere. [1, a link to Wikipedia](https://en.wikipedia.org/wiki/Pitot_tube)
 
