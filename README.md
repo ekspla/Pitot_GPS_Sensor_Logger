@@ -1,5 +1,6 @@
 # An Air/Ground Speed Sensor (Logger) Using Pitot Tube and GPS
 
+(C) ekspla
 
 ## Abstract
 
@@ -40,12 +41,12 @@ Similar sensors such as MS5525 and SDP810 may be used.
 - GPS:
 Ublox M8N, UART
 
-  Update rates are 0.5, 5, and 5 Hz for GNRMC, GNVTG and GNGGA sentences, respectively.
+  Update rates were set at 0.5, 5, and 5 Hz for GNRMC, GNVTG and GNGGA sentences, respectively.
   
 `micropyGPS.py`[6](https://github.com/ekspla/micropyGPS), a forked/modified version of [inmcm/micropyGPS](https://github.com/inmcm/micropyGPS)
 
 
-- A Display to show air/ground speed (optional):
+- Display to show air/ground speed (optional):
 A cheap HD44780 (16x2 character) type LCD, I2C
 
 `lcd_api.py`, dhyLands[7](https://github.com/dhylands/python_lcd)
@@ -62,7 +63,7 @@ Used for calibration, as well as for calculating altitudes
 
 A modified version of Adafruit[9](https://github.com/adafruit) driver
 
-Continuous mode, Px16, Tx2, w/o FIR
+Continuous mode, Px16, Tx2, w/o FIR filter
 
 
 ## Assembling
