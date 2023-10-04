@@ -98,7 +98,7 @@ A pair of bicycles were used for this experiment in a day of almost no wind outd
 The mesurement system was attached in front of the trailer's bicycle following after the 
 leader's bicycle in line.  The distances between them were kept 1.0-1.5 m at speeds 
 below 40 km/h, while a bit longer distances at above these speeds for safety reasons.  
-The effect of drafting is easily seen in the figure; the measurement points in the correlation 
+**The effect of drafting is easily seen in the figure**; the measurement points in the correlation 
 map start to deviate from the diagonal line by increasing the ground speed at above 10 km/h.
 
 ![FIG2](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/567399aa-fdd2-4cee-abe9-0b21babf997b "Fig2_Drafting_in_Cycling")
