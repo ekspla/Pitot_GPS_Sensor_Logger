@@ -96,7 +96,7 @@ may be caused by headwinds of oncoming cars.
 
 A pair of bicycles were used for this experiment in a day of almost no wind outdoor.  
 The mesurement system was attached in front of the trailer's bicycle following after the 
-leader's bicycle in line.  The distances between them were kept 1.0-1.5 m at speeds 
+leader's bicycle in line.  The distances between them were kept 1.0-1.5 m at ground speeds 
 below 40 km/h, while a bit longer distances at above these speeds for safety reasons.  
 **The effect of drafting is easily seen in the figure**; the measurement points in the correlation 
 map start to deviate from the diagonal line by increasing the ground speed at above 10 km/h.
@@ -111,7 +111,7 @@ i.e. experiments with and without the leader's bicycle. [Ref.](https:// "TO_BE_I
 ## Concluding Remarks
 
 An affordable priced (for the hobbiest) system to simultaneously measure the air and the ground speeds 
-outdoor was easily built.  As a demostrative example, a mesurement of drafting effect in cycling outdoor 
+outdoor was easily built.  As a demostrative example, a mesurement of drafting effect [3](https://en.wikipedia.org/wiki/Drafting_(aerodynamics)) in cycling outdoor 
 is shown.
 
 This system can be modified to show the effect of wind direction outdoor as well, by using 
