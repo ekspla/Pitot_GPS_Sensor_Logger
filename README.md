@@ -37,7 +37,7 @@ D6F-PH5050 [5](https://github.com/omron-devhub), OMRON, +/- 500 Pa, I2C.
 
 [`d6f_ph.py`](https://github.com/ekspla/D6F-PH)
 
-Similar sensors such as MS5525 and SDP810 may be used.
+Similar sensors such as MS5525 (TE) and SDP810 (Sensirion) may be used.
 
 
 - GPS receiver:
@@ -60,12 +60,12 @@ Used for logging data, FAT format.
 `sdcard.py`, micropython-lib [8](https://github.com/micropython/micropython-lib)
 
 
-- Environmental sensor, BMP280, (optional, I2C):
-Used for calibration, as well as for calculating altitudes.
+- Environmental sensor, BMP280 of BOSH Sensortec [9](https://www.bosch-sensortec.com/products/environmental-sensors/pressure-sensors/bmp280/), (optional, I2C):
+Used for air density calibration, as well as for calculating altitudes.
 
 Note that this sensor should be protected against direct sunlight and air stream.  A tiny piece of black open-cell foam (sponge) may suffice.
 
-A modified version of Adafruit [9](https://github.com/adafruit) driver.  Continuous mode, Px16, Tx2, w/o FIR filter.
+A modified version of Adafruit [10](https://github.com/adafruit) driver.  Continuous mode, Px16, Tx2, w/o FIR filter.
 
 
 ## Assembling
