@@ -92,7 +92,7 @@ may be caused by headwinds of oncoming cars.
 ![FIG1](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/f7df4ba7-1bcd-483e-b431-faf6cff3856e "Fig1_Test_Calibration")
 
 
-## Demonstrative Result
+## Demonstrative Result -- Visualize the Effect of Drafting in Cycling --
 
 A pair of bicycles were used for this experiment in a day of almost no wind outdoor.  
 The mesurement system was attached in front of the trailer's bicycle following after the 
