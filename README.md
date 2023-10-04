@@ -108,8 +108,8 @@ i.e. experiments with and without the leader's bicycle.
 
 ## Concluding Remarks
 
-An affordable priced (for the hobbiest) system to similtanously measure the air and ground speeds outdoor was 
-easily built.  As a demostrative example, a mesurement of drafting effect in cycling outdoor 
+An affordable priced (for the hobbiest) system to similtanously measure the air and the ground speeds 
+outdoor was easily built.  As a demostrative example, a mesurement of drafting effect in cycling outdoor 
 is shown.
 
 This system can be modified to show the effect of wind direction outdoor as well, by using 
