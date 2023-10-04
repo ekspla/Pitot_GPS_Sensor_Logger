@@ -110,7 +110,7 @@ i.e. experiments with and without the leader's bicycle.
 
 ## Concluding Remarks
 
-An affordable priced (for the hobbiest) system to similtanously measure the air and the ground speeds 
+An affordable priced (for the hobbiest) system to simultaneously measure the air and the ground speeds 
 outdoor was easily built.  As a demostrative example, a mesurement of drafting effect in cycling outdoor 
 is shown.
 
