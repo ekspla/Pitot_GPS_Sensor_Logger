@@ -41,7 +41,7 @@ Similar sensors such as MS5525 (TE Connectivity) and SDP810 (Sensirion) may be u
 
 
 - GPS receiver:
-u-blox NEO-M8N [10](https://www.u-blox.com/en/product/neo-m8-series), UART
+u-blox NEO-M8N [10](https://www.u-blox.com/en/product/neo-m8-series), UART, 115200 bps
 
   Update rates were set at 0.5, 5, and 5 Hz for GNRMC, GNVTG and GNGGA sentences, respectively.
   
@@ -115,7 +115,7 @@ outdoor was easily built.  As a demostrative example, a mesurement of drafting e
 is shown.
 
 This system can be modified to show the effect of wind direction outdoor as well, by using 
-multiple (possibly three, each at an angle of 120 deg.) air speed sensors and vectorial math.
+multiple air speed sensors (possibly three, each at an angle of 120 deg.) and vectorial math.
 
 
 ## References
