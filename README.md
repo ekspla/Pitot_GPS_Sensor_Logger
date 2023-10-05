@@ -70,7 +70,7 @@ Note that this sensor should be protected against direct sunlight and air stream
 
 ## Assembling
 
-Most of the micropython codes were precompiled before installation using mpy-cross [16](https://github.com/micropython/micropython/tree/master/mpy-cross).
+Most of the micropython codes were precompiled using mpy-cross [16](https://github.com/micropython/micropython/tree/master/mpy-cross) before installation.
 The assembled units of SoC/display and air speed sensor are shown in the photos (see below).
 The procedure to calculate air speed is shown in elesewhere. [1, a link to Wikipedia](https://en.wikipedia.org/wiki/Pitot_tube)
 
@@ -92,11 +92,11 @@ may be caused by headwinds of oncoming cars.
 ![FIG1](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/f7df4ba7-1bcd-483e-b431-faf6cff3856e "Fig1_Test_Calibration")
 
 
-## A Demonstrative Result -- Visualize the Effect of Drafting in Cycling --
+## A Demonstrative Result -- Visualizing the Effect of Drafting in Cycling --
 
 A pair of bicycles were used for this experiment in a day of almost no wind outdoor.  
-The mesurement system was attached in front of the trailer's bicycle following after the 
-leader's bicycle in line.  The distances between them were kept 1.0-1.5 m at ground speeds 
+The mesurement system was attached in front of the trailer's bicycle after the leader's 
+bicycle following in line.  The distances between them were kept 1.0-1.5 m at ground speeds 
 below 40 km/h, while a bit longer distances at above these speeds for safety reasons.  
 **The effect of drafting is easily seen in the figure**; the measurement points in the correlation 
 map start to deviate from the diagonal line by increasing the ground speed at above 10 km/h.
