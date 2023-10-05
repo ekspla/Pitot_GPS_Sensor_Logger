@@ -16,7 +16,7 @@ and the ground speeds of drafting in cycling [3](https://en.wikipedia.org/wiki/D
 
 
 - SoC:
-BlackPill (STM32F411CEU, 8 MB SPI flash), WeAct Studio [4](https://github.com/WeActStudio).
+BlackPill (ARM Cortex-M4, STM32F411CEU, 8 MB SPI flash), WeAct Studio [4](https://github.com/WeActStudio).
 
 RTC clock (LSE) adjusted to 32.768 kHz using a pair of additional ~5 pF C0G capacitors, 
 pin headers of PC14/15 removed, a coin-cell (CR2032) attatched to VBAT.
