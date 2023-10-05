@@ -16,7 +16,7 @@ and the ground speeds of drafting in cycling [3](https://en.wikipedia.org/wiki/D
 
 
 - SoC:
-BlackPill (STM32F411CEU, 8 MB SPI flash), WeAct Studio [4](https://github.com/WeActStudio)
+BlackPill (STM32F411CEU, 8 MB SPI flash), WeAct Studio [4](https://github.com/WeActStudio).
 
 RTC clock (LSE) adjusted to 32.768 kHz using a pair of additional ~5 pF C0G capacitors, 
 pin headers of PC14/15 removed, a coin-cell (CR2032) attatched to VBAT.
@@ -41,7 +41,7 @@ Similar sensors such as MS5525 (TE Connectivity) and SDP810 (Sensirion) may be u
 
 
 - GPS receiver:
-u-blox NEO-M8N [10](https://www.u-blox.com/en/product/neo-m8-series), UART, 115200 bps
+u-blox NEO-M8N [10](https://www.u-blox.com/en/product/neo-m8-series), UART, 115200 bps.
 
   Update rates were set at 0.5, 5, and 5 Hz for GNRMC, GNVTG and GNGGA sentences, respectively.
   
@@ -49,7 +49,7 @@ u-blox NEO-M8N [10](https://www.u-blox.com/en/product/neo-m8-series), UART, 1152
 
 
 - A display to show the air/ground speed in real time (optional):
-A cheap HD44780 (16x2 character) type LCD, I2C
+A cheap HD44780 (16x2 character) type LCD, I2C.
 
 `lcd_api.py`, dhylands [12](https://github.com/dhylands/python_lcd)
 
@@ -63,16 +63,16 @@ Used for logging data, FAT format.
 - Environmental sensor, BMP280 from BOSH Sensortec [14](https://www.bosch-sensortec.com/products/environmental-sensors/pressure-sensors/bmp280/), (optional, I2C):
 Used for air density calibration, as well as for calculating altitudes.
 
-A modified version of Adafruit [15](https://github.com/adafruit) driver; continuous mode, Px16, Tx2, and w/o FIR filter.
+A modified version of Adafruit [15](https://github.com/adafruit) driver; continuous mode, oversampling (Px16, Tx2), and w/o FIR filter.
 
 Note that this sensor should be protected against direct sunlight and air stream.  A tiny piece of black open-cell foam (sponge) may suffice.
 
 
 ## Assembling
 
-Most of the micropython codes were precompiled using mpy-cross [16](https://github.com/micropython/micropython/tree/master/mpy-cross) before installation.
-The assembled units of SoC/display and air speed sensor are shown in the photos (see below).
-The procedure to calculate air speed is shown in elesewhere. [1, a link to Wikipedia](https://en.wikipedia.org/wiki/Pitot_tube)
+Most part of the micropython codes were precompiled using mpy-cross [16](https://github.com/micropython/micropython/tree/master/mpy-cross) before installation.
+The assembled units of SoC/GPS/display and air speed sensor are shown in the photos (see below).
+The procedure to calculate air speed from differential pressure is shown in elesewhere. [1, a link to Wikipedia](https://en.wikipedia.org/wiki/Pitot_tube)
 
 ![PHOTO_DISPLAY_UNIT](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/597a1803-d24d-48b3-8af5-0211344b13ab "Display_Unit")![PHOTO_SENSOR_AND_PITOT](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/bd19487f-eebe-436c-b4d1-b03a5846598e "Sensor_Unit")![PHOTO_SENSOR_UNIT](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/8a9c0e06-09cd-4d3d-8f98-5ab75494a01e "Sensor_Unit")
 
@@ -86,8 +86,8 @@ can handle > 10 Hz.
 
 Air speed was calibrated by using Pitot coefficient and an offset of differential pressure.
 Its accuracy was tested in a foggy morning around dawn (no wind / no sunlight).
-See the correlation map below.  The tiny deviation from the diagonal line in 10-20 km/h range 
-may be caused by headwinds of oncoming cars.
+See almost perfect fit in the correlation map below.  The tiny deviation from the diagonal 
+line in 10-20 km/h range may be caused by headwinds of oncoming cars.
 
 ![FIG1](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/f7df4ba7-1bcd-483e-b431-faf6cff3856e "Fig1_Test_Calibration")
 
