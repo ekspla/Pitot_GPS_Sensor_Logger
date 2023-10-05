@@ -9,7 +9,7 @@ An air/ground speed measurement system with logging functionality was easily bui
 with a Pitot tube [1](https://en.wikipedia.org/wiki/Pitot_tube) and a GPS receiver using micropython [2](https://micropython.org/).  The system allows us 
 to measure the air and the ground speeds almost simultaneously at 5 Hz and more in various 
 outdoor activities.  As a demonstration of this system, a correlation map of the air 
-and the ground speeds of drfating in cycling [3](https://en.wikipedia.org/wiki/Drafting_(aerodynamics)) is shown.
+and the ground speeds of drafting in cycling [3](https://en.wikipedia.org/wiki/Drafting_(aerodynamics)) is shown.
 
 
 ## Materials
