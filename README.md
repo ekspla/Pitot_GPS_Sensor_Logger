@@ -6,73 +6,73 @@
 
 
 An air/ground speed measurement system with logging functionality was easily built 
-with a Pitot tube [1](https://en.wikipedia.org/wiki/Pitot_tube) and a GPS receiver using micropython [2](https://micropython.org/).  The system allows us 
+with a Pitot tube [<sup>1</sup>](https://en.wikipedia.org/wiki/Pitot_tube) and a GPS receiver using micropython [<sup>2</sup>](https://micropython.org/).  The system allows us 
 to measure the air and the ground speeds almost simultaneously at 5 Hz and more in various 
 outdoor activities.  As a demonstration of this system, a correlation map of the air 
-and the ground speeds of drafting in cycling [3](https://en.wikipedia.org/wiki/Drafting_(aerodynamics)) is shown.
+and the ground speeds of drafting in cycling [<sup>3</sup>](https://en.wikipedia.org/wiki/Drafting_(aerodynamics)) is shown.
 
 
 ## Materials
 
 
 - SoC:
-BlackPill (ARM Cortex-M4, STM32F411CEU, 8 MB SPI flash), WeAct Studio [4](https://github.com/WeActStudio).
+BlackPill (ARM Cortex-M4, STM32F411CEU, 8 MB SPI flash), WeAct Studio [<sup>4</sup>](https://github.com/WeActStudio).
 
 RTC clock (LSE) adjusted to 32.768 kHz using a pair of additional ~5 pF C0G capacitors, 
 pin headers of PC14/15 removed, a coin-cell (CR2032) attatched to VBAT.
 
-An universal counter and [this code 5](https://jhalfmoon.com/dbc/2023/03/28/micropython%e7%9a%84%e5%8d%88%e7%9d%a198-stm32%e7%89%88%e3%80%81nucleo%e3%81%ae%e3%82%af%e3%83%ad%e3%83%83%e3%82%af%e8%a8%ad%e5%ae%9a%e3%82%92%e8%a6%8b%e7%9b%b4%e3%81%99/) were used to measure/adjust the LSE frequency.
+An universal counter and [this code <sup>5</sup>](https://jhalfmoon.com/dbc/2023/03/28/micropython%e7%9a%84%e5%8d%88%e7%9d%a198-stm32%e7%89%88%e3%80%81nucleo%e3%81%ae%e3%82%af%e3%83%ad%e3%83%83%e3%82%af%e8%a8%ad%e5%ae%9a%e3%82%92%e8%a6%8b%e7%9b%b4%e3%81%99/) were used to measure/adjust the LSE frequency.
 
-Micropython 1.20.0 [2](https://micropython.org/) installed via ST-LINK [6](https://www.st.com/en/development-tools/st-link-v2.html).
+Micropython 1.20.0 [<sup>2</sup>](https://micropython.org/) installed via ST-LINK [<sup>6</sup>](https://www.st.com/en/development-tools/st-link-v2.html).
 
 
 - Pitot tube:
 A cheap pitot tube for UAVs (drones), Aliexpress.
 
-A home built GoPro (GP) [7](https://gopro.com/) compatible mount for the tube and the differential pressure sensor (see below).
+A home built GoPro (GP) [<sup>7</sup>](https://gopro.com/) compatible mount for the tube and the differential pressure sensor (see below).
 
 
 - Differential pressure sensor:
-D6F-PH5050, OMRON [8](https://github.com/omron-devhub), +/- 500 Pa, I2C.
+D6F-PH5050, OMRON [<sup>8</sup>](https://github.com/omron-devhub), +/- 500 Pa, I2C.
 
-`d6f_ph.py` [9](https://github.com/ekspla/D6F-PH)
+`d6f_ph.py` [<sup>9</sup>](https://github.com/ekspla/D6F-PH)
 
 Similar sensors such as MS5525 (TE Connectivity) and SDP810 (Sensirion) may be used with their appropriate drivers.
 
 
 - GPS receiver:
-u-blox NEO-M8N [10](https://www.u-blox.com/en/product/neo-m8-series), UART, 115200 bps.
+u-blox NEO-M8N [<sup>10</sup>](https://www.u-blox.com/en/product/neo-m8-series), UART, 115200 bps.
 
   Update rates were set at 0.5, 5, and 5 Hz for GNRMC, GNVTG and GNGGA sentences, respectively.
   
-`micropyGPS.py` [11](https://github.com/ekspla/micropyGPS), a forked/modified version of [inmcm/micropyGPS](https://github.com/inmcm/micropyGPS)
+`micropyGPS.py` [<sup>11</sup>](https://github.com/ekspla/micropyGPS), a forked/modified version of [inmcm/micropyGPS, <sup>12</sup>](https://github.com/inmcm/micropyGPS)
 
 
 - A display to show the air/ground speed in real time (optional):
 A cheap HD44780 (16x2 character) type LCD, I2C.
 
-`lcd_api.py`, dhylands [12](https://github.com/dhylands/python_lcd)
+`lcd_api.py`, dhylands [<sup>13</sup>](https://github.com/dhylands/python_lcd)
 
 
 - SD Card (optional, SPI):
 Used for logging data, FAT format.
 
-`sdcard.py`, micropython-lib [13](https://github.com/micropython/micropython-lib)
+`sdcard.py`, micropython-lib [<sup>14</sup>](https://github.com/micropython/micropython-lib)
 
 
-- Environmental sensor, BMP280 from BOSH Sensortec [14](https://www.bosch-sensortec.com/products/environmental-sensors/pressure-sensors/bmp280/), (optional, I2C):
+- Environmental sensor, BMP280 from BOSH Sensortec [<sup>15</sup>](https://www.bosch-sensortec.com/products/environmental-sensors/pressure-sensors/bmp280/), (optional, I2C):
 Used for air density calibration, as well as for calculating altitudes.
 
-A modified version of Adafruit [15](https://github.com/adafruit) driver; continuous mode, oversampling (Px16, Tx2), and w/o FIR filter.
+A modified version of Adafruit [<sup>16</sup>](https://github.com/adafruit) driver; continuous mode, oversampling (Px16, Tx2), and w/o FIR filter.
 
 Note that this sensor should be protected against direct sunlight and air stream.  A tiny piece of black open-cell foam (sponge) may suffice.
 
 
 ## Assembling
 
-Most part of the micropython codes were precompiled using mpy-cross [16](https://github.com/micropython/micropython/tree/master/mpy-cross) before installation.
+Most part of the micropython codes were precompiled using mpy-cross [<sup>17</sup>](https://github.com/micropython/micropython/tree/master/mpy-cross) before installation.
 The assembled units of SoC/GPS/display and air speed sensor are shown in the photos (see below).
-The procedure to calculate air speed from differential pressure is shown in elesewhere. [1, a link to Wikipedia](https://en.wikipedia.org/wiki/Pitot_tube)
+The procedure to calculate air speed from differential pressure is shown in elesewhere. [A link to Wikipedia <sup>1</sup>](https://en.wikipedia.org/wiki/Pitot_tube)
 
 ![PHOTO_DISPLAY_UNIT](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/597a1803-d24d-48b3-8af5-0211344b13ab "Display_Unit")![PHOTO_SENSOR_AND_PITOT](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/bd19487f-eebe-436c-b4d1-b03a5846598e "Sensor_Unit")![PHOTO_SENSOR_UNIT](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/8a9c0e06-09cd-4d3d-8f98-5ab75494a01e "Sensor_Unit")
 
@@ -105,13 +105,13 @@ map start to deviate from the diagonal line by increasing the ground speed at ab
 
 It should be noted that **this data was easily taken by a single experiment** of 16 min, while 
 most of the drafting experiments done in the past needed at least two independent experiments,
-i.e. experiments with and without the leader's bicycle. [Ref.](https:// "TO_BE_INCLUDED")
+i.e. experiments with and without the leader's bicycle. [Ref.](https:// "REF_TO_BE_INCLUDED")
 
 
 ## Concluding Remarks
 
 An affordable priced (for the hobbiest) system to simultaneously measure the air and the ground speeds 
-outdoor was easily built.  As a demostrative example, a mesurement of drafting effect [3](https://en.wikipedia.org/wiki/Drafting_(aerodynamics)) in cycling outdoor 
+outdoor was easily built.  As a demostrative example, a mesurement of drafting effect [<sup>3</sup>](https://en.wikipedia.org/wiki/Drafting_(aerodynamics)) in cycling outdoor 
 is shown.
 
 This system can be modified to show the effect of wind direction outdoor as well, by using 
