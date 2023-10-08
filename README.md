@@ -95,7 +95,7 @@ line in 10-20 km/h range may be caused by headwinds of oncoming cars.
 ## A Demonstrative Result -- Visualizing the Effect of Drafting in Cycling --
 
 A pair of bicycles were used for this experiment in a day of almost no wind outdoor.  
-The mesurement system was attached in front of the trailer's bicycle after the leader's 
+The air speed sensor was attached in front of the trailer's bicycle after the leader's 
 bicycle following in line.  The distances between them were kept 1.0-1.5 m at ground speeds 
 below 40 km/h, while a bit longer distances at above these speeds for safety reasons.  
 **The effect of drafting is easily seen in the figure**; the measurement points in the correlation 
@@ -104,8 +104,8 @@ map start to deviate from the diagonal line by increasing the ground speed at ab
 ![FIG2](https://github.com/ekspla/Pitot_GPS_Sensor_Logger/assets/23088524/567399aa-fdd2-4cee-abe9-0b21babf997b "Fig2_Drafting_in_Cycling")
 
 It should be noted that **this data was easily taken by a single experiment** of 16 min, while 
-most of the drafting experiments done in the past needed at least two independent experiments,
-i.e. experiments with and without the leader's bicycle. [Ref.](https:// "REF_TO_BE_INCLUDED")
+most of the data in literatures consists of at least a couple of experiment,
+i.e. one with and the other without the leader's bicycle. [Ref.](https:// "REF_TO_BE_INCLUDED")
 
 
 ## Concluding Remarks
