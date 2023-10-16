@@ -21,7 +21,7 @@ BlackPill (ARM Cortex-M4, STM32F411CEU, 8 MB SPI flash), WeAct Studio [<sup>4</s
 RTC clock (LSE) adjusted to 32.768 kHz using a pair of additional ~5 pF C0G capacitors, 
 pin headers of PC14/15 removed, a coin-cell (CR2032) attatched to VBAT.
 
-An universal counter and [this code <sup>5</sup>](https://jhalfmoon.com/dbc/2023/03/28/micropython%e7%9a%84%e5%8d%88%e7%9d%a198-stm32%e7%89%88%e3%80%81nucleo%e3%81%ae%e3%82%af%e3%83%ad%e3%83%83%e3%82%af%e8%a8%ad%e5%ae%9a%e3%82%92%e8%a6%8b%e7%9b%b4%e3%81%99/) were used to measure/adjust the LSE frequency.
+A universal counter and [this code <sup>5</sup>](https://jhalfmoon.com/dbc/2023/03/28/micropython%e7%9a%84%e5%8d%88%e7%9d%a198-stm32%e7%89%88%e3%80%81nucleo%e3%81%ae%e3%82%af%e3%83%ad%e3%83%83%e3%82%af%e8%a8%ad%e5%ae%9a%e3%82%92%e8%a6%8b%e7%9b%b4%e3%81%99/) were used to measure/adjust the LSE frequency.
 
 Micropython 1.20.0 [<sup>2</sup>](https://micropython.org/) installed via ST-LINK [<sup>6</sup>](https://www.st.com/en/development-tools/st-link-v2.html).
 
