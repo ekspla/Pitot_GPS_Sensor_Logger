@@ -24,7 +24,7 @@ pin headers of PC14/15 removed, a coin-cell (CR2032) attatched to VBAT.
 A universal counter and [this code <sup>5</sup>](https://jhalfmoon.com/dbc/2023/03/28/micropython%e7%9a%84%e5%8d%88%e7%9d%a198-stm32%e7%89%88%e3%80%81nucleo%e3%81%ae%e3%82%af%e3%83%ad%e3%83%83%e3%82%af%e8%a8%ad%e5%ae%9a%e3%82%92%e8%a6%8b%e7%9b%b4%e3%81%99/) were used to measure/adjust the LSE frequency.
 
 Micropython 1.20.0 [<sup>2</sup>](https://micropython.org/) installed via ST-LINK [<sup>6</sup>](https://www.st.com/en/development-tools/st-link-v2.html).
-The port (board definitions) to build the firmware was obtained from github [<sup>7</sup>](https://github.com/WeActStudio/WeAct_F411CE-MicroPython)
+The port (board definitions) to build the micropython firmware was obtained from github [<sup>7</sup>](https://github.com/WeActStudio/WeAct_F411CE-MicroPython)
 <sup>, </sup>[<sup>8</sup>](https://github.com/mcauser/WEACT_F411CEU6).
 
 - Pitot tube:
