@@ -34,7 +34,7 @@ A home built GoPro (GP) [<sup>10</sup>](https://gopro.com/) compatible mount for
 
 
 - Differential pressure sensor:
-D6F-PH5050, OMRON [<sup>11</sup>](https://github.com/omron-devhub), +/- 500 Pa, I2C.
+D6F-PH5050, OMRON [<sup>11</sup>](https://www.omron.com/), +/- 500 Pa, I2C.
 
 `d6f_ph.py` [<sup>12</sup>](https://github.com/ekspla/D6F-PH)
 
